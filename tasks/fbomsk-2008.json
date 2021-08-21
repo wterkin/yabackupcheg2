@@ -1,0 +1,7 @@
+{
+    "source":"E:/Firebird\ Base/fbomsk/",
+    "database":"fbomsk-2008",
+    "backup":"pgdump -d %source%%database% -h %server_17% -u postgres -p postgres -P custom -p %temp%/%database%.backup",
+    "pack":"%7z% %destination%/%database%.backup",
+    "transfer":""
+}
