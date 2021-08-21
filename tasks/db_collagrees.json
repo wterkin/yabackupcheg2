@@ -1,7 +1,7 @@
 {
     "source":"",
     "database":"db_collagree",
-    "backup":"pgdump -d %source%%database% -h %localhost% -u postgres -p postgres -P custom -p %temp%/%database%.backup",
-    "pack":"%7z% %destination%/%database%.backup",
+    "backup":"pgdump -d [source][database] -h [localhost] -u postgres -p postgres -P custom -p [temp][database].backup",
+    "pack":"[7z] [storage][database].7z [temp][database].backup",
     "transfer":""
 }
